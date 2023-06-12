@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Assertions;
 public class BonusServiceTest {
 
     @Test
-        void shouldCalculateForRegisteredAndUnderLimit() {
+    void shouldCalculateForRegisteredAndUnderLimit() {
         BonusService service = new BonusService();
 
         // подготавливаем данные:
@@ -35,6 +35,7 @@ public class BonusServiceTest {
         // производим проверку (сравниваем ожидаемый и фактический):
         Assertions.assertEquals(expected, actual);
     }
+
     @Test
     void shouldBeCalculatedFornonRegisteredAndExceedingLimit() {
         BonusService service = new BonusService();
@@ -50,6 +51,7 @@ public class BonusServiceTest {
         // производим проверку (сравниваем ожидаемый и фактический):
         Assertions.assertEquals(expected, actual);
     }
+
     @Test
     void shouldBeCalculatedFornRegisteredAndExceedingLimi() {
         BonusService service = new BonusService();
